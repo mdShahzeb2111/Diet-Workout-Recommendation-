@@ -12,7 +12,7 @@ import langchain.globals as lcg
 lcg.set_verbose(True)  # Enable verbose mode if needed
 
 # Set up the model and prompt template
-os.environ["GOOGLE_API_KEY"] = 'AIzaSyBbfaaAOOCDK_BLXsajnMmJL2BluSDyDUE'
+os.environ["GOOGLE_API_KEY"] = 'Your Gimini API Key Here'
 generation_config = {"temperature": 0.6, "top_p": 1, "top_k": 1, "max_output_tokens": 2048}
 model = GoogleGenerativeAI(model="gemini-2.0-flash", generation_config=generation_config)
 
